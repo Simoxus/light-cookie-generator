@@ -17,45 +17,42 @@ Unity editor tool that lets you generate light cookies and simulate shadows... f
    
 **4.** Navigate to "Tools > Light Cookie Generator"
    
-**5.** Select either the "Single Light" or "Batch Generation" modes
-   
-**6.** In the Save Settings section, input a folder for the cookies to save to and a prefix for the light cookie's name
+**5.** In the Save Settings section, input a folder for the cookies to save to and a prefix for the light cookie's name
 
-**7.** Add either a "Camera Transform" and "Reference Light" if you're in "Single Light" mode, or just drag in your lights if you're in "Batch Generation" mode
+**6.** Just drag your light object(s) into the "Add Light" field or select all your light(s) and do "Add Selected Lights"
 
-**8.** Do "Generate Cookie Texture" or "Generate All Cookies"
+**7.** Do "Generate Cookies" (you can also do "Generate Previews")
 
-**9.** Very crunchy
+**8.** Very crunchy
 
 ## Features
-* ### Single Light Mode:
-  * Allows you to save and load cookies (that were generated using the tool)
-  * Choose to use all scene geometry as shadow casters
-  * You can use a shadow caster blacklist however
-  * Set up your single light from whatever you have selected
-  * Pick a folder for the cookie texture to save to
-  * Provide a prefix for the cookie texture name
-  * Provide a custom transform to be used as the camera
-  * Visualize the capture region, direction, etc. (using gizmos my beloved)
-  * Use a rotation offset
-  * Set a "capture size" for the cookie texture (orthographic size)
-  * Pick a resolution for the light cookie
-  * Use a shadow simulation to fake shadows (albeit not perfectly)
-  * Set the shadow opacity of the cookie texture
-  * Set the overall brightness of the cookie texture
-  
-* ### Batch Generation Mode
-  * Allows you to save and load cookies (that were generated using the tool)
-  * Pick a folder for the cookie texture(s) to save to
-  * Provide a prefix for the cookie texture name(s)
-  * Pick a resolution for the light cookie(s)
-  * Use either the light's range or shadow plane distance
-  * Set the shadow opacity of the cookie texture(s)
-  * Set the overall brightness of the cookie texture(s)
-  * Set the "capture size" for the cookie texture(s) (orthographic size)
+* ### Saving and loading
+  * When a setting is changed in the tool, it will save to EditorPrefs
+  * When a cookie is generated, the .meta that goes along with that file will have the data the tool needs to load that texture's settings
+  * Pain in my ass to make
+
+* ### Customizable settings
+  * Drag in lights or add all selected
+  * Button to clear all lights
+  * Option to use spotlight range
+    * If you don't use this, you can manually set the shadow plane's distance instead
+  * Ability to set the opacity of the actual shadows in the cookie texture
+  * Ability to set the overall brightness of the cookie texture
+  * Set amount of samples anti-aliasing takes for each pixel (1x, 2x, 4x, 8x)
+  * Use numerous methods for blurring (Penumbra blur is my favorite)
+  * Set a blur radius
+  * Set the amount of iterations blur goes through
+  * Use Gizmos
+  * Set a rotation offset for capture
+  * Set a "capture size" for the texture (orthographic size)
+  * Use a custom folder for output
+  * Set a prefix for the texture's name
+  * Set the resolution of the outputted texture
+  * Make the cookie(s) also assign to lights
 
 ## Notes That May Be Useful To You Perchance And I Hope They Are But I'm Not Sure
 * Tested with Unity 6.0 (0.58f2) and URP
+* The GUI originally had two different modes, but I decided to just merge them (there may be some leftover variables and stuff in the code)
 * You can only load settings from cookies (that were made using the generator)
 * A resolution of 512x512 for the cookie is probably enough
 * Only spot lights are supported
