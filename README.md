@@ -1,3 +1,5 @@
+Unity editor tool that lets you generate light cookies and simulate shadows... fresh out of the oven (i'm sorry)
+
 ## Light Cookie Generator
 
 **By**: @Simoxus ([GitHub](https://github.com/Simoxus), [YouTube](https://www.youtube.com/@simoxusofficial))
@@ -6,6 +8,7 @@
 
 ## Usage
 **1.** On the main page of the repository, you should see a green "Code" button. Click it and do "Download ZIP":
+
 <img width="220" height="202" alt="tutorial1" src="https://github.com/user-attachments/assets/73879a5e-2b48-4acb-b34c-efb28a3cdf71" />
 
 **2.** Once it's done downloading, extract it, import the folder into your project, and wait for it to compile
@@ -53,7 +56,7 @@
 
 ## Notes That May Be Useful To You Perchance And I Hope They Are But I'm Not Sure
 * Tested with Unity 6.0 (0.58f2) and URP
-* You can only load settings from cookies (that were made using the genertor)
+* You can only load settings from cookies (that were made using the generator)
 * A resolution of 512x512 for the cookie is probably enough
 * Only spot lights are supported
 * THESE ARE NOT REAL COOKIES (sadly D:)
