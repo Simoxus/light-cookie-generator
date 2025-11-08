@@ -7,15 +7,13 @@ Unity editor tool that lets you generate light cookies and simulate shadows... f
 **Thanks to**: @spazi (who made me think about making this in the first place)
 
 ## Usage
-**1.** On the main page of the repository, you should see a green "Code" button. Click it and do "Download ZIP":
+**1.** In Unity, go to "Window > Package Manager"
 
-<img width="220" height="202" alt="tutorial1" src="https://github.com/user-attachments/assets/73879a5e-2b48-4acb-b34c-efb28a3cdf71" />
+**2.** You should see an "add" icon at the top left of the package manager; do "Install package from Git URL"
 
-**2.** Once it's done downloading, extract it, import the folder into your project, and wait for it to compile
-
-**3.** Go to your URP asset and make sure "Light Cookies" are turned on
+**3.** Paste this URL in: ```https://github.com/Simoxus/light-cookie-generator.git```
    
-**4.** Navigate to "Tools > Light Cookie Generator"
+**4.** Once installed, navigate to "Tools > Light Cookie Generator"
    
 **5.** In the Save Settings section, input a folder for the cookies to save to and a prefix for the light cookie's name
 
@@ -32,23 +30,24 @@ Unity editor tool that lets you generate light cookies and simulate shadows... f
   * Pain in my ass to make
 
 * ### Customizable settings
-  * Drag in lights or add all selected
-  * Button to clear all lights
-  * Option to use spotlight range
-    * If you don't use this, you can manually set the shadow plane's distance instead
-  * Ability to set the opacity of the actual shadows in the cookie texture
-  * Ability to set the overall brightness of the cookie texture
-  * Set amount of samples anti-aliasing takes for each pixel (1x, 2x, 4x, 8x)
-  * Use numerous methods for blurring (Penumbra blur is my favorite)
-  * Set a blur radius
-  * Set the amount of iterations blur goes through
-  * Use Gizmos
-  * Set a rotation offset for capture
-  * Set a "capture size" for the texture (orthographic size)
-  * Use a custom folder for output
-  * Set a prefix for the texture's name
-  * Set the resolution of the outputted texture
-  * Make the cookie(s) also assign to lights
+  to be rewritten (eventually)
+  ~~* Drag in lights or add all selected~~
+  ~~* Button to clear all lights~~
+  ~~* Option to use spotlight range~~
+    ~~* If you don't use this, you can manually set the shadow plane's distance instead~~
+  ~~* Ability to set the opacity of the actual shadows in the cookie texture~~
+  ~~* Ability to set the overall brightness of the cookie texture~~
+  ~~* Set amount of samples anti-aliasing takes for each pixel (1x, 2x, 4x, 8x)~~
+  ~~* Use numerous methods for blurring (Penumbra blur is my favorite)~~
+  ~~* Set a blur radius~~
+  ~~* Set the amount of iterations blur goes through~~
+  ~~* Use Gizmos~~
+  ~~* Set a rotation offset for capture~~
+  ~~* Set a "capture size" for the texture (orthographic size)~~
+  ~~* Use a custom folder for output~~
+  ~~* Set a prefix for the texture's name~~
+  ~~* Set the resolution of the outputted texture~~
+  ~~* Make the cookie(s) also assign to lights~~
 
 ## Notes That May Be Useful To You Perchance And I Hope They Are But I'm Not Sure
 * Tested with Unity 6.0 (0.58f2) and URP
